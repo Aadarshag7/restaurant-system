@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -32,3 +33,7 @@ Route::controller(AuthController::class)->group(function() {
         return redirect('/login');})->name('logout');
     
 });    
+
+Route::controller(MenuController::class)->prefix('menu')->group(function(){
+    Route::get('','index')->name('menu');
+});

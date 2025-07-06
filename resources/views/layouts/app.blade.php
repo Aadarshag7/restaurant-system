@@ -18,14 +18,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{ asset('admin/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('admin/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-  <link href="{{ asset('admin/assets/vendor/aos/aos.css') }}" rel="stylesheet">
-  <link href="{{ asset('admin/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('admin/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('admin/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('admin/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ asset('admin/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ asset('admin/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('admin/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="{{ asset('admin/assets/css/main.css') }}" rel="stylesheet">
+  <link href="{{ asset('admin/css/main.css') }}" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -55,7 +55,7 @@
           <ul>
             <li><a href="#hero" class="{{ request()->is('/') ? 'active' : '' }}">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="{{ route('menu')}}"#menu">Menu</a></li>
+            <li><a href="{{route('menu')}}">Menu</a></li>
             <li><a href="#specials">Specials</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#chefs">Chefs</a></li>
@@ -94,12 +94,12 @@
   </main>
 
   <!-- Vendor JS Files -->
-  <script src="{{ asset('admin/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('admin/assets/vendor/aos/aos.js') }}"></script>
-  <script src="{{ asset('admin/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-  <script src="{{ asset('admin/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ asset('admin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('admin/vendor/aos/aos.js') }}"></script>
+  <script src="{{ asset('admin/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ asset('admin/vendor/swiper/swiper-bundle.min.js') }}"></script>
   
   <!-- Main JS File -->
-  <script src="{{ asset('admin/assets/js/main.js') }}"></script>
+  <script src="{{ asset('admin/js/main.js') }}"></script>
 </body>
 </html>

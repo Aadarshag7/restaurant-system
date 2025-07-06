@@ -2,16 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Menu;
 use Illuminate\Http\Request;
 
-class AuthController extends Controller
+class MenuController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $menus=Menu::get();
+        return view('menu.index',compact('menus'));
     }
 
     /**
@@ -19,7 +21,7 @@ class AuthController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -27,7 +29,11 @@ class AuthController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Menu::create([
+            'name'=>$request->name,
+            'price'=>$request->price,
+            'photo'=>$request->photo? $request->photo->store('public','Menus'):null
+        ]);
     }
 
     /**

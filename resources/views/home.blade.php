@@ -6,7 +6,7 @@
 @section('content')
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-        <img src="{{ asset('admin/assets/img/hero-bg.jpg') }}" alt="" data-aos="fade-in">
+        <img src="{{ asset('admin/img/hero-bg.jpg') }}" alt="" data-aos="fade-in">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
@@ -29,7 +29,7 @@
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row gy-4">
                 <div class="col-lg-6 order-1 order-lg-2">
-                    <img src="{{ asset('admin/assets/img/about.jpg') }}" class="img-fluid about-img" alt="">
+                    <img src="{{ asset('admin/img/about.jpg') }}" class="img-fluid about-img" alt="">
                 </div>
                 <div class="col-lg-6 order-2 order-lg-1 content">
                     <h3>Voluptatem dignissimos provident</h3>
@@ -54,7 +54,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 menu-item">
-                    <img src="{{ asset('admin/assets/img/menu/lobster-bisque.jpg') }}" class="menu-img" alt="">
+                    <img src="{{ asset('admin/img/menu/lobster-bisque.jpg') }}" class="menu-img" alt="">
                     <div class="menu-content">
                         <a href="#">Lobster Bisque</a><span>$5.95</span>
                     </div>
