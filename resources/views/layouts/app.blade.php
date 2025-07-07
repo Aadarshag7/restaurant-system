@@ -48,18 +48,18 @@
     <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="{{ url('/') }}" class="logo d-flex align-items-center me-auto me-xl-0">
-          <h1 class="sitename">Restaurantly</h1>
+          <h1 class="sitename">Kidang Restaurantly</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero" class="{{ request()->is('/') ? 'active' : '' }}">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="{{route('about')}}>About</a></li>
             <li><a href="{{route('menu')}}">Menu</a></li>
             <li><a href="#specials">Specials</a></li>
             <li><a href="#events">Events</a></li>
-            <li><a href="#chefs">Chefs</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="{{route('chef')}}">Chefs</a></li>
+            <li><a href="{{route('gallery')}}">Gallery</a></li>
             <li class="dropdown">
               <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
               <ul>

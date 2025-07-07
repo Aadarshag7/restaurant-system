@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ChefController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -37,3 +39,12 @@ Route::controller(AuthController::class)->group(function() {
 Route::controller(MenuController::class)->prefix('menu')->group(function(){
     Route::get('','index')->name('menu');
 });
+Route::controller(ChefController::class)->prefix('chef')->group(function(){
+    Route::get('','index')->name('chef');
+});
+
+Route::controller(GalleryController::class)->prefix('gallery')->group(function(){
+    Route::get('','index')->name('gallery');
+});
+
+

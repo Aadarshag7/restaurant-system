@@ -23,7 +23,7 @@ class MenuSeeder extends Seeder
      [
         'name'=>'chowmein',
         'price'=>'120',
-        'photo'=> 'admin/img/maxredefault.jpg',
+        'photo'=> 'admin/img/chowmein.jpg',
 
 
      ],
