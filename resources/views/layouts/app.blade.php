@@ -54,7 +54,7 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero" class="{{ request()->is('/') ? 'active' : '' }}">Home</a></li>
-            <li><a href="{{route('about')}}>About</a></li>
+            <li><a href="">About</a></li>
             <li><a href="{{route('menu')}}">Menu</a></li>
             <li><a href="#specials">Specials</a></li>
             <li><a href="#events">Events</a></li>
@@ -84,7 +84,7 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-book-a-table d-none d-xl-block" href="#book-a-table">Book a Table</a>
+        <a class="btn-book-a-table d-none d-xl-block" href="{{route('book.create')}}">Book a Table</a>
       </div>
     </div>
   </header>

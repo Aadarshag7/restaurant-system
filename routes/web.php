@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\ChefController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\MenuController;
@@ -47,4 +48,9 @@ Route::controller(GalleryController::class)->prefix('gallery')->group(function()
     Route::get('','index')->name('gallery');
 });
 
-
+Route::controller(BookController::class)->prefix('book')->group(function(){
+    Route::get('','index')->name('book');
+    Route::get('create','create')->name('book.create');
+    Route::post('store','store')->name('book.store');
+    
+});
