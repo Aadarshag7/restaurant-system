@@ -54,7 +54,7 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero" class="{{ request()->is('/') ? 'active' : '' }}">Home</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="{{route('about')}}">About</a></li>
             <li><a href="{{route('menu')}}">Menu</a></li>
             <li><a href="#specials">Specials</a></li>
             <li><a href="#events">Events</a></li>
@@ -79,7 +79,7 @@
                 <li><a href="#">Dropdown 4</a></li>
               </ul>
             </li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="{{route('contact')}}">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

@@ -54,3 +54,11 @@ Route::controller(BookController::class)->prefix('book')->group(function(){
     Route::post('store','store')->name('book.store');
     
 });
+// web.php
+Route::get('cont', function() {
+    return view('contact');
+})->name('contact'); // This names the route
+
+Route::get('abt',function(){
+    return view('about');
+})->name('about');

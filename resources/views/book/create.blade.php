@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="container d-flex align-items-center" style="min-height: calc(100vh - 120px);">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Make a Booking') }}</div>
