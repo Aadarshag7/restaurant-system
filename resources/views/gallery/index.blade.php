@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
+<!-- @section('title','gallery') -->
 @section('content')
 <div class="container">
     <h1 class="my-4">Our Gallery</h1>
-    
+   
     @if(session('success'))
         <div class="alert alert-success">
             {{ session('success') }}

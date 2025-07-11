@@ -12,7 +12,7 @@
     <section class="py-4">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="{{ asset('images/about-image.jpg') }}" alt="Our Restaurant" class="img-fluid rounded shadow">
+                <img src="{{ asset('https://bootstrapmade.com/content/demo/Restaurantly/assets/img/about.jpg') }}" alt="Our Restaurant" class="img-fluid rounded shadow">
             </div>
             <div class="col-lg-6">
                 <h2 class="mb-4">Our Story</h2>
@@ -38,7 +38,7 @@
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm">
-                    <img src="{{ asset('images/chef1.jpg') }}" class="card-img-top" alt="Head Chef">
+                    <img src="{{ asset('admin/img/chefs/chefs-1.jpg') }}" class="card-img-top" alt="Head Chef">
                     <div class="card-body text-center">
                         <h5 class="card-title">Michael Johnson</h5>
                         <p class="text-muted">Head Chef</p>
@@ -48,7 +48,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm">
-                    <img src="{{ asset('images/chef2.jpg') }}" class="card-img-top" alt="Sous Chef">
+                    <img src="{{ asset('admin/img/chefs/chefs-2.jpg') }}" class="card-img-top" alt="Sous Chef">
                     <div class="card-body text-center">
                         <h5 class="card-title">Sarah Williams</h5>
                         <p class="text-muted">Sous Chef</p>
@@ -58,9 +58,9 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm">
-                    <img src="{{ asset('images/manager.jpg') }}" class="card-img-top" alt="Restaurant Manager">
+                    <img src="{{ asset('admin/img/chefs/chefs-3.jpg') }}" class="card-img-top" alt="Restaurant Manager">
                     <div class="card-body text-center">
-                        <h5 class="card-title">David Chen</h5>
+                        <h5 class="card-title">Aadarsh Gautam</h5>
                         <p class="text-muted">Restaurant Manager</p>
                         <p class="card-text">Ensuring every guest has a memorable experience...</p>
                     </div>

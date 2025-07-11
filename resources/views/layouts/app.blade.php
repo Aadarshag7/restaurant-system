@@ -57,7 +57,7 @@
             <li><a href="{{route('about')}}">About</a></li>
             <li><a href="{{route('menu')}}">Menu</a></li>
             <li><a href="#specials">Specials</a></li>
-            <li><a href="#events">Events</a></li>
+            <li><a href="{{route('event')}}">Events</a></li>
             <li><a href="{{route('chef')}}">Chefs</a></li>
             <li><a href="{{route('gallery')}}">Gallery</a></li>
             <li class="dropdown">

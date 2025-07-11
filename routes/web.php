@@ -62,3 +62,7 @@ Route::get('cont', function() {
 Route::get('abt',function(){
     return view('about');
 })->name('about');
+
+Route::get('event',function(){
+return view('event');
+})->name('event');
