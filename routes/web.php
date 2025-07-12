@@ -66,3 +66,7 @@ Route::get('abt',function(){
 Route::get('event',function(){
 return view('event');
 })->name('event');
+
+Route::get('special',function(){
+return view('special');
+})->name('special');

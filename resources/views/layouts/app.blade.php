@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@yield('title', 'Restaurantly')</title>
+  <title>@yield('title' )</title>
   <meta name="description" content="@yield('description', 'Premium restaurant template')">
   <meta name="keywords" content="restaurant, food, dining">
 
@@ -56,7 +56,7 @@
             <li><a href="#hero" class="{{ request()->is('/') ? 'active' : '' }}">Home</a></li>
             <li><a href="{{route('about')}}">About</a></li>
             <li><a href="{{route('menu')}}">Menu</a></li>
-            <li><a href="#specials">Specials</a></li>
+            <li><a href="{{route('special')}}">Specials</a></li>
             <li><a href="{{route('event')}}">Events</a></li>
             <li><a href="{{route('chef')}}">Chefs</a></li>
             <li><a href="{{route('gallery')}}">Gallery</a></li>
@@ -78,6 +78,7 @@
                 <li><a href="#">Dropdown 3</a></li>
                 <li><a href="#">Dropdown 4</a></li>
               </ul>
+
             </li>
             <li><a href="{{route('contact')}}">Contact</a></li>
           </ul>

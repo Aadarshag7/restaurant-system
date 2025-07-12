@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+<!-- @section('title','menu') -->
 @section('content')
 <div class="container">
     <h1 class="my-4">Our Menu</h1>
