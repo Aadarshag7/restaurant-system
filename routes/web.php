@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AuthControlller;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\ChefController;
 use App\Http\Controllers\GalleryController;
