@@ -60,7 +60,7 @@ Route::get('cont', function() {
     return view('contact');
 })->name('contact'); // This names the route
 
-Route::get('abt',function(){
+Route::middleware('auth')->get('abt',function(){
     return view('about');
 })->name('about');
 

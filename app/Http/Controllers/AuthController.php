@@ -47,6 +47,12 @@ return view ('auth.login');
 }
  
 public function loginAction(Request $request){
+    $validation=$request->validate([
+     'email'=>['required'],
+     'password'=>['required']
+    ]);
+        
+    
   if (!Auth::attempt($request->only('email', 'password'), $request->boolean('remember'))){
             throw ValidationException::withMessages([
                 'email'=> trans('auth.failed')

@@ -85,7 +85,7 @@
             <li class="dropdown">
               <a href="#"><span>{{ Auth::user()->name }}</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="{{ route('profile') }}">Profile</a></li>
+                <li><a href="">Profile</a></li>
                 <li>
                   <form method="POST" action="{{ route('logout') }}">
                     @csrf
