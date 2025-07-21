@@ -64,7 +64,7 @@ Route::middleware('auth')->get('abt',function(){
     return view('about');
 })->name('about');
 
-Route::get('event',function(){
+Route::middleware('admin')->get('event',function(){
 return view('event');
 })->name('event');
 
