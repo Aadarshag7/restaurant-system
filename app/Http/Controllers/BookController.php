@@ -13,7 +13,7 @@ class BookController extends Controller
     public function index()
     {
         $books=Book::get();
-        return view('book.index',compact('books'));
+        return response()->json($books);
     }
 
     /**
