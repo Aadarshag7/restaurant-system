@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('content')
+@section('title', 'book')
+@section ('content')
 <div class="container">
     <div class="container d-flex align-items-center" style="min-height: calc(100vh - 120px);">
         <div class="col-md-8">
@@ -9,7 +10,7 @@
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('book.store') }}">
-                        @csrf
+                       @csrf
 
                         <div class="row mb-3">
                             <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Full Name') }}</label>

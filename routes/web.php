@@ -71,3 +71,4 @@ return view('event');
 Route::get('special',function(){
 return view('special');
 })->name('special');
+
